@@ -1,5 +1,8 @@
 #pragma once
 
+#include <cmath>
+#include "functions.h"
+
 namespace BDWF {
 
 	using namespace System;
@@ -15,6 +18,9 @@ namespace BDWF {
 	public ref class Plot : public System::Windows::Forms::Form
 	{
 	public:
+		int N;
+		double* arr = createArray <double>(N);
+
 		Plot(void)
 		{
 			InitializeComponent();
@@ -91,7 +97,13 @@ namespace BDWF {
 #pragma endregion
 
 	public: 
-		int N;
+		void graphic()
+		{
+			for (int i = 0; i < N; ++i)
+			{
+				chart1->Series[0]->Points->AddXY(i * 0.1, sin(i * 0.1));
+			}
+		}
 
 	};
 }

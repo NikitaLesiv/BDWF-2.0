@@ -1,3 +1,4 @@
+
 #pragma once
 #include "myVector.h"
 #include "Plot.h"
@@ -179,8 +180,10 @@ namespace BDWF {
 		private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			Plot^ p1 = gcnew Plot();
-			p1->N = 100;
+			p1->N = Convert::ToInt64(textBox1->Text);
+			
 			p1->Show();
+			p1->graphic();
 		}
 	};
 }

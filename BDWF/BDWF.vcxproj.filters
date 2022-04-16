@@ -30,6 +30,9 @@
     <ClInclude Include="Plot.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="functions.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainForm.cpp">
