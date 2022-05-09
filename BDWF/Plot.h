@@ -96,14 +96,8 @@ namespace BDWF {
 		}
 #pragma endregion
 
-	public: 
-		void graphic()
-		{
-			for (int i = 0; i < N; ++i)
-			{
-				chart1->Series[0]->Points->AddXY(i * 0.1, sin(i * 0.1));
-			}
-		}
+	public:
+		void graphic();
 
 	};
 }

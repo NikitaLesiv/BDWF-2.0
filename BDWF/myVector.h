@@ -152,7 +152,7 @@ public:
 
 	void operator/=(const T& a)
 	{	
-		if (a != static_cast<T>(0))
+		if (a != static_cast<T>(0.0l))
 		{
 			*this = *this / a;
 		}

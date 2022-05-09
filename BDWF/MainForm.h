@@ -180,6 +180,7 @@ namespace BDWF {
 		private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 			Plot^ p1 = gcnew Plot();
+
 			p1->N = Convert::ToInt64(textBox1->Text);
 			
 			p1->Show();
