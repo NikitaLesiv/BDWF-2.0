@@ -10,7 +10,7 @@ int main(array<String^>^ args)
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	BDWF::MainForm form;
+	BD::MainForm form;
 
 	Application::Run(% form);
 

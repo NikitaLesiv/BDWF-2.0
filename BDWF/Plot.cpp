@@ -1,6 +1,6 @@
 #include "Plot.h"
 
-	void BDWF::Plot::graphic()
+	void BD::Plot::graphic()
 	{
 		double a = 0.0, b = 3 * 4;
 

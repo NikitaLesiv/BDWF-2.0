@@ -3,7 +3,7 @@
 #include <cmath>
 #include "functions.h"
 
-namespace BDWF {
+namespace BD {
 
 	using namespace System;
 	using namespace System::ComponentModel;

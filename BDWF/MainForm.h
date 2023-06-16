@@ -3,7 +3,7 @@
 #include "myVector.h"
 #include "Plot.h"
 
-namespace BDWF {
+namespace BD {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -188,6 +188,7 @@ namespace BDWF {
 			this->button_GenerateBeam->TabIndex = 4;
 			this->button_GenerateBeam->Text = L"Генерация пучка";
 			this->button_GenerateBeam->UseVisualStyleBackColor = true;
+			this->button_GenerateBeam->Click += gcnew System::EventHandler(this, &MainForm::button_GenerateBeam_Click);
 			// 
 			// button2
 			// 
@@ -262,7 +263,7 @@ namespace BDWF {
 			this->Controls->Add(this->main_menuStrip);
 			this->MainMenuStrip = this->main_menuStrip;
 			this->Name = L"MainForm";
-			this->Text = L"BDWF";
+			this->Text = L"Динамика частиц ";
 			this->main_menuStrip->ResumeLayout(false);
 			this->main_menuStrip->PerformLayout();
 			this->groupBox_beam->ResumeLayout(false);
@@ -282,5 +283,9 @@ namespace BDWF {
 			p1->Show();
 			p1->graphic();
 		}
-	};
+	private: System::Void button_GenerateBeam_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+
+	}
+};
 }
