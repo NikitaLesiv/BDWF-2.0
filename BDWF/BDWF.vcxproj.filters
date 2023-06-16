@@ -41,9 +41,6 @@
     <ClCompile Include="MainForm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="generationBeam.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Plot.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>

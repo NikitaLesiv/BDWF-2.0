@@ -127,7 +127,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="generationBeam.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="Plot.cpp" />
   </ItemGroup>

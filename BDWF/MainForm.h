@@ -2,6 +2,7 @@
 #pragma once
 #include "myVector.h"
 #include "Plot.h"
+#include "generationBeam.h"
 
 namespace BD {
 
@@ -22,8 +23,6 @@ namespace BD {
 		{
 			InitializeComponent();
 
-
-
 		}
 
 
@@ -37,7 +36,7 @@ namespace BD {
 			if (components)
 			{
 				delete components;
-			}
+			};
 		}
 	private: System::Windows::Forms::MenuStrip^ main_menuStrip;
 	private: System::Windows::Forms::ToolStripMenuItem^ ôàéëToolStripMenuItem;
@@ -49,18 +48,14 @@ namespace BD {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::Button^ button_GenerateBeam;
+	private: System::Windows::Forms::Button^ button_GenerationBeam;
+
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::GroupBox^ groupBox_beam;
 	private: System::Windows::Forms::GroupBox^ groupBox_field;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::Button^ button4;
-
-
-
-
-
 
 
 
@@ -87,13 +82,13 @@ namespace BD {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->button_GenerateBeam = (gcnew System::Windows::Forms::Button());
+			this->button_GenerationBeam = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox_beam = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox_field = (gcnew System::Windows::Forms::GroupBox());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->main_menuStrip->SuspendLayout();
 			this->groupBox_beam->SuspendLayout();
 			this->groupBox_field->SuspendLayout();
@@ -125,25 +120,25 @@ namespace BD {
 			// ñîçäàòüToolStripMenuItem
 			// 
 			this->ñîçäàòüToolStripMenuItem->Name = L"ñîçäàòüToolStripMenuItem";
-			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->ñîçäàòüToolStripMenuItem->Size = System::Drawing::Size(217, 26);
 			this->ñîçäàòüToolStripMenuItem->Text = L"Ñîçäàòü";
 			// 
 			// îòêðûòüToolStripMenuItem
 			// 
 			this->îòêðûòüToolStripMenuItem->Name = L"îòêðûòüToolStripMenuItem";
-			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->îòêðûòüToolStripMenuItem->Size = System::Drawing::Size(217, 26);
 			this->îòêðûòüToolStripMenuItem->Text = L"Îòêðûòü";
 			// 
 			// ñîõðàíèòüÂÔàéëToolStripMenuItem
 			// 
 			this->ñîõðàíèòüÂÔàéëToolStripMenuItem->Name = L"ñîõðàíèòüÂÔàéëToolStripMenuItem";
-			this->ñîõðàíèòüÂÔàéëToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->ñîõðàíèòüÂÔàéëToolStripMenuItem->Size = System::Drawing::Size(217, 26);
 			this->ñîõðàíèòüÂÔàéëToolStripMenuItem->Text = L"Ñîõðàíèòü â ôàéë";
 			// 
 			// âûõîäToolStripMenuItem
 			// 
 			this->âûõîäToolStripMenuItem->Name = L"âûõîäToolStripMenuItem";
-			this->âûõîäToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->âûõîäToolStripMenuItem->Size = System::Drawing::Size(217, 26);
 			this->âûõîäToolStripMenuItem->Text = L"Âûõîä";
 			// 
 			// ñïðàâêàToolStripMenuItem
@@ -180,15 +175,15 @@ namespace BD {
 			this->textBox1->Text = L"100";
 			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// button_GenerateBeam
+			// button_GenerationBeam
 			// 
-			this->button_GenerateBeam->Location = System::Drawing::Point(6, 21);
-			this->button_GenerateBeam->Name = L"button_GenerateBeam";
-			this->button_GenerateBeam->Size = System::Drawing::Size(261, 39);
-			this->button_GenerateBeam->TabIndex = 4;
-			this->button_GenerateBeam->Text = L"Ãåíåðàöèÿ ïó÷êà";
-			this->button_GenerateBeam->UseVisualStyleBackColor = true;
-			this->button_GenerateBeam->Click += gcnew System::EventHandler(this, &MainForm::button_GenerateBeam_Click);
+			this->button_GenerationBeam->Location = System::Drawing::Point(6, 21);
+			this->button_GenerationBeam->Name = L"button_GenerationBeam";
+			this->button_GenerationBeam->Size = System::Drawing::Size(261, 39);
+			this->button_GenerationBeam->TabIndex = 4;
+			this->button_GenerationBeam->Text = L"Ãåíåðàöèÿ ïó÷êà";
+			this->button_GenerationBeam->UseVisualStyleBackColor = true;
+			this->button_GenerationBeam->Click += gcnew System::EventHandler(this, &MainForm::button_GenerateBeam_Click);
 			// 
 			// button2
 			// 
@@ -201,7 +196,7 @@ namespace BD {
 			// 
 			// groupBox_beam
 			// 
-			this->groupBox_beam->Controls->Add(this->button_GenerateBeam);
+			this->groupBox_beam->Controls->Add(this->button_GenerationBeam);
 			this->groupBox_beam->Location = System::Drawing::Point(19, 42);
 			this->groupBox_beam->Name = L"groupBox_beam";
 			this->groupBox_beam->Size = System::Drawing::Size(273, 193);
@@ -223,14 +218,14 @@ namespace BD {
 			this->groupBox_field->TabStop = false;
 			this->groupBox_field->Text = L"Ìîäåëèðóåìàÿ çàäà÷à";
 			// 
-			// button3
+			// button5
 			// 
-			this->button3->Location = System::Drawing::Point(6, 66);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(261, 32);
-			this->button3->TabIndex = 6;
-			this->button3->Text = L"×èêåéí";
-			this->button3->UseVisualStyleBackColor = true;
+			this->button5->Location = System::Drawing::Point(6, 141);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(261, 43);
+			this->button5->TabIndex = 8;
+			this->button5->Text = L"Êèëüâàòåðíàÿ äèýëåêòðè÷åñêàÿ ñòðóêòóðà";
+			this->button5->UseVisualStyleBackColor = true;
 			// 
 			// button4
 			// 
@@ -241,14 +236,14 @@ namespace BD {
 			this->button4->Text = L"Äå÷èðïåð";
 			this->button4->UseVisualStyleBackColor = true;
 			// 
-			// button5
+			// button3
 			// 
-			this->button5->Location = System::Drawing::Point(6, 141);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(261, 43);
-			this->button5->TabIndex = 8;
-			this->button5->Text = L"Êèëüâàòåðíàÿ äèýëåêòðè÷åñêàÿ ñòðóêòóðà";
-			this->button5->UseVisualStyleBackColor = true;
+			this->button3->Location = System::Drawing::Point(6, 66);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(261, 32);
+			this->button3->TabIndex = 6;
+			this->button3->Text = L"×èêåéí";
+			this->button3->UseVisualStyleBackColor = true;
 			// 
 			// MainForm
 			// 
@@ -272,6 +267,12 @@ namespace BD {
 			this->PerformLayout();
 
 		}
+
+		generationBeam^ formGB = gcnew generationBeam();
+
+
+
+
 #pragma endregion
 
 		private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e)
@@ -285,7 +286,8 @@ namespace BD {
 		}
 	private: System::Void button_GenerateBeam_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-
+		formGB->Show();
+		
 	}
 };
 }
